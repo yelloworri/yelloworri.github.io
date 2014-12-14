@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>SB Admin 2 - Bootstrap Admin Theme</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- MetisMenu CSS -->
+    <link href="css/plugins/metisMenu/metisMenu.min.css" rel="stylesheet">
+
+    <!-- Timeline CSS -->
+    <link href="css/plugins/timeline.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/sb-admin-2.css" rel="stylesheet">
+
+    <!-- Morris Charts CSS -->
+    <link href="css/plugins/morris.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">사이트단위</a>
+                <a class="navbar-brand" href="index2.html">기능단위</a>
+            </div>
+            <!-- /.navbar-header -->
+
+            <div class="navbar-default sidebar" role="navigation">
+                <div class="sidebar-nav navbar-collapse">
+                    <ul class="nav" id="side-menu">
+                        <li>
+                            <a href="#"><i class="fa fa-sitemap fa-fw"></i> 우리펜션 Admin<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="#" data-menu="admin-pension">펜션관리</a>
+                                </li>
+                                <li>
+                                    <a href="#" data-menu="admin-reserve">예약관리</a>
+                                </li>
+                                <li>
+                                    <a href="#" data-menu="admin-sales">결산관리</a>
+                                </li>
+                                <li>
+                                    <a href="#" data-menu="admin-board">업무용게시판</a>
+                                </li>
+                                <li>
+                                    <a href="#" data-menu="admin-etc">공통/기타</a>
+                                </li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-sitemap fa-fw"></i> 업주 Admin<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="#" data-menu="company-pension">펜션관리</a>
+                                </li>
+                                <li>
+                                    <a href="#" data-menu="company-reserve">예약관리</a>
+                                </li>
+                                <li>
+                                    <a href="#" data-menu="company-sales">결산관리</a>
+                                </li>
+                                <li>
+                                    <a href="#" data-menu="company-contact">제휴관리</a>
+                                </li>
+                                <li>
+                                    <a href="#" data-menu="company-board">게시판관리</a>
+                                </li>
+                                <li>
+                                    <a href="#" data-menu="company-etc">공통/기타</a>
+                                </li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-sitemap fa-fw"></i> CP사 Admin</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-sitemap fa-fw"></i> 프론트<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="#">회원 </a>
+                                </li>
+                                <li>
+                                    <a href="#">펜션 <span class="fa arrow"></span></a>
+                                    <ul class="nav nav-third-level">
+                                        <li>
+                                            <a href="#">메인</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">리스트</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">상세</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">검색</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">예약 <span class="fa arrow"></span></a>
+                                    <ul class="nav nav-third-level">
+                                        <li>
+                                            <a href="#">예약하기</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">예약취소</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">마이페이지</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">기타 <span class="fa arrow"></span></a>
+                                    <ul class="nav nav-third-level">
+                                        <li>
+                                            <a href="#">외부연동</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">이벤트</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">커뮤니티</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">고객센터</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">회사소개</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">기타</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-sitemap fa-fw"></i> 모바일<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a>준비중...</a>
+                                </li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-sitemap fa-fw"></i> API<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="#">옥션</a>
+                                </li>
+                                <li>
+                                    <a href="#">이지웰</a>
+                                </li>
+                                <li>
+                                    <a href="#">ilikeclick</a>
+                                </li>
+                                <li>
+                                    <a href="#">기타</a>
+                                </li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.sidebar-collapse -->
+            </div>
+            <!-- /.navbar-static-side -->
+        </nav>
+
+        <div id="page-wrapper">
+            <div class="row" data-contents="index">
+                <div class="col-lg-12">
+                    <h1 class="page-header">사이트단위</h1>
+                </div>
+                <!-- /.col-lg-12 -->
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <!-- <div class="panel-heading">
+                            DataTables Advanced Tables
+                        </div> -->
+                        <!-- /.panel-heading -->
+                        <div class="panel-body">
+                            <div class="table-responsive">
+                                <table class="table table-striped table-bordered table-hover" id="dataTables-example">
+                                    <thead>
+                                        <tr>
+                                            <th>구분</th>
+                                            <th>URL</th>
+                                            <th>비고</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>우리펜션 Admin</td>
+                                            <td><a href="http://admin.wooripension.com/woori_scm/">http://admin.wooripension.com/woori_scm/</a></td>
+                                            <td>우리펜션 어드민(운영&CS)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>업주 Admin</td>
+                                            <td><a href="http://www.wooripension.com/singly_admin/">http://www.wooripension.com/singly_admin/</a></td>
+                                            <td>업주 어드민</td>
+                                        </tr>
+                                        <tr>
+                                            <td>CP사 Admin</td>
+                                            <td><a href="http://www.wooripension.com/allatmall/">http://www.wooripension.com/allatmall/</a></td>
+                                            <td>CP사 어드민</td>
+                                        </tr>
+                                        <tr>
+                                            <td>프론트</td>
+                                            <td><a href="http://www.wooripension.com/">http://www.wooripension.com/</a></td>
+                                            <td>우리펜션 사이트</td>
+                                        </tr>
+                                        <tr>
+                                            <td>모바일</td>
+                                            <td><a href="http://m.wooripension.com/">http://m.wooripension.com/</a></td>
+                                            <td>모바일 사이트</td>
+                                        </tr>
+                                        <tr>
+                                            <td>API</td>
+                                            <td>wooripension.com</td>
+                                            <td>옥션, 이지웰, etc...</td>
+                                        </tr>
+                                        <tr>
+                                            <td>BATCH</td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <!-- /.panel-body -->
+                    </div>
+                    <!-- /.panel -->
+                </div>
+                <!-- /.col-lg-12 -->
+            </div>
+
+            <div class="row" data-contents="admin-pension" style="display:none;">
+                <div class="col-lg-12">
+                    <h3 class="page-header">우리펜션 Admin > 펜션관리</h3>
+                </div>
+
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <!-- .panel-heading -->
+                        <div class="panel-body">
+                            <div class="panel-group" id="admin-pension">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#admin-pension" href="#a-p-1">펜션관리</a>
+                                        </h4>
+                                    </div>
+                                    <div id="a-p-1" class="panel-collapse collapse in">
+                                        <div class="panel-body">
+                                            <li>펜션관리 리스트</li>
+                                            <li>펜션정보수정</li>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#admin-pension" href="#a-p-2">방관리</a>
+                                        </h4>
+                                    </div>
+                                    <div id="a-p-2" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            <li>방리스트 수정</li>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#admin-pension" href="#a-p-3">상세팝업</a>
+                                        </h4>
+                                    </div>
+                                    <div id="a-p-3" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            <li>상세팝업</li>
+                                            <li>상세팝업 객실사진 iframe</li>
+                                            <li>상세팝업 펜션외경사진 iframe</li>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- .panel-body -->
+                    </div>
+                    <!-- /.panel -->
+                </div>
+            </div>
+
+            <div class="row" data-contents="admin-reserve" style="display:none;">
+                <div class="col-lg-12">
+                    <h3 class="page-header">우리펜션 Admin > 예약관리</h3>
+                </div>
+
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <!-- .panel-heading -->
+                        <div class="panel-body">
+                            <div class="panel-group" id="admin-reserve">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#admin-reserve" href="#a-r-1">예약관리</a>
+                                        </h4>
+                                    </div>
+                                    <div id="a-r-1" class="panel-collapse collapse in">
+                                        <div class="panel-body">
+                                            <li>펜션검색</li>
+                                            <li>예약현황</li>
+                                            <li>실시간예약현황(달력팝업)</li>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- .panel-body -->
+                    </div>
+                    <!-- /.panel -->
+                </div>
+            </div>
+
+            <div class="row" data-contents="admin-sales" style="display:none;">
+                <div class="col-lg-12">
+                    <h3 class="page-header">우리펜션 Admin > 결산관리</h3>
+                </div>
+
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <!-- .panel-heading -->
+                        <div class="panel-body">
+                            <div class="panel-group" id="admin-sales">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#admin-sales" href="#a-s-1">결산관리</a>
+                                        </h4>
+                                    </div>
+                                    <div id="a-s-1" class="panel-collapse collapse in">
+                                        <div class="panel-body">
+                                            <li>결산관리 XML</li>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- .panel-body -->
+                    </div>
+                    <!-- /.panel -->
+                </div>
+            </div>
+
+            <div class="row" data-contents="admin-board" style="display:none;">
+                <div class="col-lg-12">
+                    <h3 class="page-header">우리펜션 Admin > 업무용게시판</h3>
+                </div>
+
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <!-- .panel-heading -->
+                        <div class="panel-body">
+                            <div class="panel-group" id="admin-board">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#admin-board" href="#a-b-1">업무용게시판</a>
+                                        </h4>
+                                    </div>
+                                    <div id="a-b-1" class="panel-collapse collapse in">
+                                        <div class="panel-body">
+                                            <li>리스트</li>
+                                            <li>상세</li>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- .panel-body -->
+                    </div>
+                    <!-- /.panel -->
+                </div>
+            </div>
+
+            <div class="row" data-contents="admin-etc" style="display:none;">
+                <div class="col-lg-12">
+                    <h3 class="page-header">우리펜션 Admin > 공통/기타</h3>
+                </div>
+
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <!-- .panel-heading -->
+                        <div class="panel-body">
+                            <div class="panel-group" id="admin-etc">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#admin-etc" href="#a-e-1">공통</a>
+                                        </h4>
+                                    </div>
+                                    <div id="a-e-1" class="panel-collapse collapse in">
+                                        <div class="panel-body">
+                                            <li>레이아웃</li>
+                                            <li>메뉴</li>
+                                            <li>로그인</li>
+                                            <li>메인요약(대쉬보드)</li>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#admin-etc" href="#a-e-2">기타</a>
+                                        </h4>
+                                    </div>
+                                    <div id="a-e-2" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            <li>문자발송</li>
+                                            <li>기본설정관리>달력관리</li>
+                                            <li>배너 미리보기</li>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- .panel-body -->
+                    </div>
+                    <!-- /.panel -->
+                </div>
+            </div>
+
+            <div class="row" data-contents="company-pension" style="display:none;">
+                <div class="col-lg-12">
+                    <h3 class="page-header">업주 Admin > 펜션관리</h3>
+                </div>
+
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <!-- .panel-heading -->
+                        <div class="panel-body">
+                            <div class="panel-group" id="company-pension">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#company-pension" href="#c-p-1">펜션관리</a>
+                                        </h4>
+                                    </div>
+                                    <div id="c-p-1" class="panel-collapse collapse in">
+                                        <div class="panel-body">
+                                            <li>관리자수정</li>
+                                            <li>펜션소개수정</li>
+                                            <li>팝업관리</li>
+                                            <li>개별예약정보수정</li>
+                                            <li>내부사진등록</li>
+                                            <li>외부사진등록</li>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#company-pension" href="#c-p-2">방관리</a>
+                                        </h4>
+                                    </div>
+                                    <div id="c-p-2" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            <li>방정보수정</li>
+                                            <li>방막기</li>
+                                            <li>방풀기</li>
+                                            <li>방막기내역</li>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- .panel-body -->
+                    </div>
+                    <!-- /.panel -->
+                </div>
+            </div>
+
+            <div class="row" data-contents="company-reserve" style="display:none;">
+                <div class="col-lg-12">
+                    <h3 class="page-header">업주 Admin > 예약관리</h3>
+                </div>
+
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <!-- .panel-heading -->
+                        <div class="panel-body">
+                            <div class="panel-group" id="company-reserve">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#company-reserve" href="#c-r-1">예약관리</a>
+                                        </h4>
+                                    </div>
+                                    <div id="c-r-1" class="panel-collapse collapse in">
+                                        <div class="panel-body">
+                                            <li>예약현황리스트</li>
+                                            <li>예약현황리스트 엑셀다운로드</li>
+                                            <li>예약현황달력</li>
+                                            <li>예약상세보기</li>
+                                            <li>예약상세메모저장</li>
+                                            <li>예약변경</li>
+                                            <li>예약자정보변경</li>
+                                            <li>예약취소처리</li>
+                                            <li>예약완료처리</li>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#company-reserve" href="#c-r-2">기타</a>
+                                        </h4>
+                                    </div>
+                                    <div id="c-r-2" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            <li>전화예약</li>
+                                            <li>카드결제요청</li>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- .panel-body -->
+                    </div>
+                    <!-- /.panel -->
+                </div>
+            </div>
+
+            <div class="row" data-contents="company-sales" style="display:none;">
+                <div class="col-lg-12">
+                    <h3 class="page-header">업주 Admin > 결산관리</h3>
+                </div>
+
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <!-- .panel-heading -->
+                        <div class="panel-body">
+                            <div class="panel-group" id="company-sales">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#company-sales" href="#c-s-1">결산관리</a>
+                                        </h4>
+                                    </div>
+                                    <div id="c-s-1" class="panel-collapse collapse in">
+                                        <div class="panel-body">
+                                            <li>결산보고서</li>
+                                            <li>매출그래프</li>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- .panel-body -->
+                    </div>
+                    <!-- /.panel -->
+                </div>
+            </div>
+
+            <div class="row" data-contents="company-contact" style="display:none;">
+                <div class="col-lg-12">
+                    <h3 class="page-header">업주 Admin > 제휴관리</h3>
+                </div>
+
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <!-- .panel-heading -->
+                        <div class="panel-body">
+                            <div class="panel-group" id="company-contact">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#company-contact" href="#c-c-1">제휴관리</a>
+                                        </h4>
+                                    </div>
+                                    <div id="c-c-1" class="panel-collapse collapse in">
+                                        <div class="panel-body">
+                                            <li>제휴업체리스트</li>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- .panel-body -->
+                    </div>
+                    <!-- /.panel -->
+                </div>
+            </div>
+
+            <div class="row" data-contents="company-board" style="display:none;">
+                <div class="col-lg-12">
+                    <h3 class="page-header">업주 Admin > 게시판관리</h3>
+                </div>
+
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <!-- .panel-heading -->
+                        <div class="panel-body">
+                            <div class="panel-group" id="company-board">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#company-board" href="#c-b-1">게시판관리</a>
+                                        </h4>
+                                    </div>
+                                    <div id="c-b-1" class="panel-collapse collapse in">
+                                        <div class="panel-body">
+                                            <li>1:1건의게시판</li>
+                                            <li>우리펜션공지</li>
+                                            <li>이용문의</li>
+                                            <li>이용후기</li>
+                                            <li>펜션공지사항</li>
+                                            <li>업주공지사항</li>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- .panel-body -->
+                    </div>
+                    <!-- /.panel -->
+                </div>
+            </div>
+
+            <div class="row" data-contents="company-etc" style="display:none;">
+                <div class="col-lg-12">
+                    <h3 class="page-header">업주 Admin > 공통/기타</h3>
+                </div>
+
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <!-- .panel-heading -->
+                        <div class="panel-body">
+                            <div class="panel-group" id="company-etc">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#company-etc" href="#c-e-1">공통/기타</a>
+                                        </h4>
+                                    </div>
+                                    <div id="c-e-1" class="panel-collapse collapse in">
+                                        <div class="panel-body">
+                                            <li>업주메인</li>
+                                            <li>로그인/로그아웃</li>
+                                            <li>SMS보내기</li>
+                                            <li>SMS발송대상</li>
+                                            <li>SMS발송내역</li>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- .panel-body -->
+                    </div>
+                    <!-- /.panel -->
+                </div>
+            </div>
+        </div>
+        <!-- /#page-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Metis Menu Plugin JavaScript -->
+    <script src="js/plugins/metisMenu/metisMenu.min.js"></script>
+
+    <script src="js/plugins/dataTables/jquery.dataTables.js"></script>
+    <script src="js/plugins/dataTables/dataTables.bootstrap.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/sb-admin-2.js"></script>
+    <script>
+        $(document).ready(function() {
+            // $('#dataTables-example').dataTable({
+            //     paging: false,
+            //     searching: false,
+            // });
+            $("[data-menu]").click(function(){
+                $("[data-contents]").hide();
+                $("[data-contents='"+$(this).data('menu')+"']").show();
+            });
+        });
+    </script>
+</body>
+
+</html>
